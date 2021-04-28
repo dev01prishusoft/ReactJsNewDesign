@@ -1,0 +1,117 @@
+.logo{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.logoDesc{
+    margin-bottom: 15px;
+    font-size: 11px;
+}
+
+.mainBtn{
+    border: 2px solid #cc1b1b;
+    border-radius: 0;
+    height: 40px;
+    font-weight: 500;
+    background: #fff;
+    width: 75%;
+    font-size: 13px;
+    color: #cc1b1b;
+}
+
+.welcomeContainer{
+    height: 100%;
+    min-height: 125px;
+    position: relative;
+}
+
+.welcomeContainer > div {
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    bottom: -18%;
+    transform: translate(-50%,-50%);
+}
+
+.welcomeText{
+    color: black;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.welcomeText .redText{
+    color: #cc1b1b;
+}
+
+.spacing{
+    padding: 0 0 10px 0;
+    margin-bottom: 5px;
+}
+
+.spacing label{
+    display: block;
+}
+
+.spacing select{
+    width: 100%;
+}
+
+.scrolling{
+    max-height: calc(100% - 150px);
+    overflow: auto;
+}
+
+.selectedItem .listItems{
+    color: #fff;
+    background-color: #060d31;
+    padding: 8px;
+}
+
+.listItems{
+    padding: 8px;
+    font-size: 12px;
+    background-color: rgb(128 128 128 / 30%);
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.listItems:hover{
+    opacity: 0.8;
+}
+
+.container-fluid{
+    height: 100%;
+    padding-right: 0px !important;
+    padding-left: 35px !important;
+}
+
+.form-control{
+    border-radius: 0px !important;
+}
+
+.form-group{
+    margin-bottom: 0px !important;
+}
+
+label{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 360px) {
+    .mainBtn {
+        width: 100% !important;
+    }
+    .welcomeContainer > div {
+        top: 50% !important;
+        bottom: 0% !important;
+    }
+    .container-fluid{
+        height: 100%;
+        padding-right: 35px !important;
+    }
+  }

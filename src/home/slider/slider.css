@@ -1,0 +1,85 @@
+.sliderContainer{
+    height: 300px;
+    width: 97%;
+    position: relative;
+    overflow: hidden;
+    text-align:center;
+    background-color: black;
+    z-index: 10;
+}
+
+.flexLine{
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.confortTitle{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.confortDesc{
+    font-size: 13px;
+    text-align: justify !important;
+    width: 90%;
+}
+
+.details{
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.btnStyle{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    height: 40px;
+    width: 40px;
+    background-color: #cc1b1b;
+    border-radius: 0;
+    outline: none;
+    border: 1px solid #cc1b1b;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btnStyle:hover{
+    opacity: 0.8;
+}
+
+.leftBtn{
+    right: 40px;
+    padding: 10px;
+}
+
+.rightBtn{
+    right:0;
+    padding: 10px;
+}
+
+.staticDiv{
+    position:absolute;
+    z-index:0;
+    background:#cde4e6;
+    bottom:0%;
+    right:0%;
+    height:250px;
+    width:110px;
+}
+
+@media only screen and (max-width: 360px) {
+    .staticDiv{
+        visibility: hidden !important;
+    }
+    .details{
+        margin-right: 0px !important;
+    }
+    .confortDesc{
+        width: 100% !important;
+    }
+    .sliderContainer{
+        width: 100% !important;
+    }
+  }
